@@ -1,0 +1,21 @@
+CREATE DATABASE test_assignment;
+
+USE test_assignment;
+
+CREATE TABLE post (
+    id INT,
+    userId INT,
+    title VARCHAR(200),
+    body VARCHAR(65535),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE comment (
+    id INT,
+    postId INT,
+    name VARCHAR(200),
+    email VARCHAR(255),
+    body VARCHAR(65535),
+    PRIMARY KEY (id),
+    FOREIGN KEY (postId) REFERENCES post(id)
+);

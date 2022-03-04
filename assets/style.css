@@ -1,0 +1,48 @@
+html,body
+{
+    margin: 0;
+}
+
+h1
+{
+  margin: 0 0 20px 0;
+}
+
+main
+{
+    background-color: lightgray;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section
+{
+    padding: 50px;
+}
+
+.input-group
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+form button, form input
+{
+    margin: 10px 0;
+}
+
+.invalid-feedback
+{
+    position: absolute;
+    bottom: 0;
+    color: red;
+}
+
+.is-invalid
+{
+    border-color: red;
+}
+
